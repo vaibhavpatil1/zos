@@ -1,0 +1,9 @@
+Trust on system to decide the Block-size. System decided blocksieze is most efficient.
+providing BLKSIZE=0 will do the same
+Give enough primary space so that, it will require secondary space in rare conditions.
+Always code RLSE on DD statement space parameter
+Coding ROUND with CYL option can give some performance gain
+Prefer REGION parameter on JOB than step. Give enough big number for region if Job deals with Tape files.
+DFSORT and SYNCSORT should be preferred over basic IBM utilities like IEBGENER as they are faster
+Prefer DB2 Load/ unload utilities over Cobol-DB2 programs whenever possible. 
+Use odd number for BUFNO parameter and avoid number greater than 35
